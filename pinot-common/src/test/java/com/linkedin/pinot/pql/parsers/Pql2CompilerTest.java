@@ -75,8 +75,7 @@ public class Pql2CompilerTest {
       return;
     }
 
-    System.out.println("failed");
-    //Assert.fail("Query " + query + " compiled successfully but was expected to fail compilation");
+    Assert.fail("Query " + query + " compiled successfully but was expected to fail compilation");
   }
 
   private void testTopZeroFor(Pql2Compiler compiler, String s, final int expectedTopN, boolean parseException) throws Exception {
